@@ -1,0 +1,160 @@
+/*
+@font-face {
+  font-family: instagramTitle;
+  src: url("fonts/Billabong.ttf");
+}
+*/
+
+.verticalDivider {
+  border-left: 1px solid black;
+  height: 30px;
+  color: black;
+}
+
+#siteName {
+    height: 30px;
+    margin-top: 12px;
+}
+
+a.fa.logo {
+    font-size: xx-large;
+    color: black;
+}
+
+.nav-link i{
+    color: black;
+    font-size: x-large;
+}
+
+html body {
+    background-color: rgba(var(--b3f,250,250,250),1);
+}
+
+body {
+    padding-bottom: 25px;
+}
+
+hr {
+    margin: 0px!important;
+}
+
+.card-img-top img{
+    height: 250px;
+}
+
+.col {
+    max-width: 60%!important;
+    margin-top: 25px;
+}
+
+.card-body {
+    padding: 0!important;
+}
+
+.card-header {
+    background-color: white!important;
+    display: inline-flex;
+}
+
+.card-footer {
+    background-color: white!important;
+    display:inline-flex!important;
+}
+.card-footer .user {
+    font-size: 14px;
+    font-weight: bolder;
+    
+}
+
+.card-footer .description {
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+.circleImage {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+
+.pictureOwner {
+    font-weight: bolder;
+    font-size: 14px;
+    display: flex;
+    align-items:center;
+    margin-bottom: 0px;
+}
+
+.floatRight {
+    float: right;
+}
+
+.btnCol {
+    margin-top: 8px;
+}
+
+div p {
+    word-wrap: break-word;
+}
+
+
+/* FOR PROFILE PAGE */
+
+.profileImage{
+    border-radius: 50%;
+    object-fit: cover;
+    width:230px;
+    height:230px;
+}
+
+.gridImage {
+    object-fit: cover;
+    height:350px;
+    width: 350px
+}
+
+.stats {
+    display: inline-flex;
+}
+
+.stats p {
+    padding-right: 20px;
+}
+
+.gridSection {
+    margin-top: 24px;
+}
+
+.infoSection {
+    margin-top: 32px;
+}
+
+.profileSection {
+    margin-top: 23px;
+}
+
+#myAccount {
+    font-size: 24px;
+}
+
+
+
+/* START OF EXPLORE PAGE STYLING */
+
+
+.recSection img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recSection button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.xProfileImage{
+    object-fit: cover;
+}

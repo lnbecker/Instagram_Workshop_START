@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instagram</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!-- BOOTSTRAP STUFF -------------------------------------->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- END OF BOOTSTRAP STUFF ------------------------------->
+        
+        <!-- Social Media icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- FontAwesome icons -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+
+    <body>
+        
+        <!-- START OF NAVBAR ----------------------------------------------------------->
+        <nav class="navbar navbar-expand-md bg-white" id="mainNav">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="instagram_home.html" class="fa fa-instagram navbar-brand logo nav-link"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><div class="verticalDivider nav-link"></div></a>
+                    </li>
+                    <li class="nav-item">
+                       <a href="instagram_home.html">
+                             <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png" id="siteName" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-compass"></i></a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="#"><i class="fa fa-heart-o"></i></a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="my_profile.html"><i class="fa fa-user-o"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <hr>
+        <!-- END OF NAVBAR ------------------------------------------------------------->
+        
+        <!-- START OF PHOTO CARDS ------------------------------------------------------->
+        <div class="container" id="instagramFeed">
+            <div class="row">
+                <div class="col-lg-12 btnCol">
+                    <button class="btn floatRight"><i class="fa fa-plus" data-toggle="modal" data-target="#uploadModal"></i></button>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="https://pixel.nymag.com/imgs/fashion/daily/2019/06/18/18-puppy-dog-eyes.w700.h700.jpg" alt="Avatar" class="circleImage">
+                            <p class="pictureOwner">a_cute_doggie</p>
+                        </div>
+                        
+                        <div class="card-body">
+                            <img class="card-img-top" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1094874726.png?crop=0.542xw:0.814xh;0.0472xw,0.127xh&resize=640:*" alt="Card image">
+                          </div>
+                        <div class="card-footer">
+                            <p class="user">the_cute_dog</p>
+                            <p class="description">Some example text.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            <!-- UPLOAD MODAL ---------------------------------------------------------->
+             
+            <!-- Modal -->
+              <div class="modal fade" id="uploadModal" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Upload Image</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="uploadForm">
+                             <div class="form-group">
+                                <label for="imageURL">Image URL:</label>
+                                <input type="text" class="form-control" id="imageURL">
+                              </div>
+                              <div class="form-group">
+                                <label for="caption">Caption:</label>
+                                <input type="text" class="form-control" id="caption">
+                              </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal" onclick="uploadImage()">Upload</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+        <!-- END OF MODAL STUFF -------------------------------------------------------->
+        
+        
+        </div>
+        
+
+            
+
+    </body>
+</html>
